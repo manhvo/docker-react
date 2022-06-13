@@ -18,4 +18,4 @@ jobs:
       run: docker build --file Dockerfile.dev . --tag manhvo/docker-react
       
     - name: Run test
-      run: docker run manhvo/docker-react npm run test -- --coverage
+      run: docker run CI=true manhvo/docker-react npm run test -- --coverage
